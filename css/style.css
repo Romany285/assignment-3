@@ -1,0 +1,60 @@
+body {
+     background-color: #F7ECDE; 
+     z-index: -5;
+}
+h1 {
+    font-family: 'Pacifico';
+    font-size: 50px;
+    color: #352E28;
+    position: relative;
+    
+}
+.form-body {
+    border-block: #352e28 dotted 2px;
+}
+ h1::after{
+    content: '';
+    position:absolute;
+    width:100%;
+    height: 20%;
+    background-color: #FEC260;
+    bottom: 50px; 
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+h1:hover::after {
+    height: 35%;
+} 
+h2 {
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+} 
+.btn-submit {
+    background-color: #BB4120;
+    color: #fff;
+}
+.btn-submit:hover{
+    background-color:#923015  ;
+    color: #fff;
+}
+.btn-visit {
+    background-color: #8A9E23;
+    transition: all 0.4s;
+    color: #fff;
+}
+.btn-visit:hover{
+    background-color: #6f8504;
+    color: #fff;
+}
+.btn-delete {
+    background-color:#e72e43 ;
+    transition: all 0.4s;
+    color: #fff;
+}
+.btn-delete:hover {
+    background-color: #cc061d;
+    color: #fff;
+}
